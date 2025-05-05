@@ -202,7 +202,7 @@ export default function HomePage() {
       {/* Bottom Note */}
       <div className="mt-10 mb-5 text-xs text-center text-gray-400">
         © {new Date().getFullYear()} AI Course Platform. All rights reserved. Crafted with ❤️ in India.
-        <p className='font-bold'>Develop By Manash Jyoti Bora</p>
+        <p className='font-bold'>Develop By Manash and Rishab</p>
       </div>
 
 
