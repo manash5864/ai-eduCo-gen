@@ -6,7 +6,8 @@ import { and, eq } from 'drizzle-orm'; // ✅ Import these for query building
 import { StudyTypeContent } from '@/configs/schema';
 import { useParams } from 'next/navigation';
 import React, { useEffect, useState } from 'react'; // ✅ Small typo fixed
-import Flashcarditem from './_components/flashcarditem';
+import Flashcarditem from './_components/Flashcarditem';
+
 
 
 import {
