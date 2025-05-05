@@ -13,7 +13,7 @@ const mainDevelopers = [
   {
     name: "Manash Jyoti Bora",
     phone: "8134856496",
-    image: "/manash.jpg",
+    image: "/Manash.jpg",
   },
   {
     name: "Rishab Ranjan Goswami",
