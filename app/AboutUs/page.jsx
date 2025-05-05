@@ -53,7 +53,7 @@ const MemberCard = ({ member }) => (
       />
     </div>
     <h3 className="text-xl font-semibold">{member.name}</h3>
-    <p className="text-gray-600">CSE, 7th Semester</p>
+    <p className="text-gray-600">CSE, 8th Semester</p>
     <p className="text-gray-600">{member.phone}</p>
   </div>
 );
