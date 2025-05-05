@@ -71,7 +71,7 @@ function Flashcard() {
       <p className='text-center text-xl mt-5'>Flashcards : The Ultimate Tool to lock in concept!</p>
       <div className='mt-10'>
       <div className='flex items-center gap-3 mb-7 border rounded-xl bg-gray-100 shadow-lg p-5'>
-        {flashcardFromDB?.content&&flashcardFromDB.content?.map((flashcard, index) => (
+        {flashcardFromDB?.content && flashcardFromDB.content?.map((flashcard, index) => (
           <div key={index} className={`w-full h-2 rounded-full
           ${index<stepCount?'bg-sky-500':'bg-gray-300'}`}>
 

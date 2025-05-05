@@ -15,7 +15,7 @@ export async function POST(req) {
           Provide questions in JSON format with each having "question", "options" (array of 4), and "answer".`;
         } else if (type === "Question/Answer") {
           PROMPT = `Generate Q&A pairs on the topic: "${chapters}". 
-          Provide JSON format with each chapter having one "question" and "answer" fields.`;
+          Provide JSON format with each chapter having one "question" and "answer" fields. give in the format of 'quetion','answer' under 'Chapter`;
         }
     
 

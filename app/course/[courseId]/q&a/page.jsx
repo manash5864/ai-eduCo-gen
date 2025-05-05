@@ -21,24 +21,28 @@ function QandA() {
     }
   }, [courseId]);
 
-  const getQandA = async () => {
-    try {
-      const result = await db
-        .select()
-        .from(StudyTypeContent)
-        .where(
-          and(
-            eq(StudyTypeContent.courseId, courseId),
-            eq(StudyTypeContent.type, "Question/Answer")
-          )
-        );
+ const getQandA = async () => {
+  try {
+    const result = await db
+      .select()
+      .from(StudyTypeContent)
+      .where(
+        and(
+          eq(StudyTypeContent.courseId, courseId),
+          eq(StudyTypeContent.type, "Question/Answer")
+        )
+      );
 
-      setQandA(result[0]);
-      setQandAdata(result[0]?.content || []);
-    } catch (error) {
-      console.error('Error fetching quizzes:', error);
-    }
-  };
+    const content = result[0]?.content;
+    const parsedContent = typeof content === "string" ? JSON.parse(content) : content;
+
+    setQandA(result[0]);
+    setQandAdata(Array.isArray(parsedContent) ? parsedContent : []);
+  } catch (error) {
+    console.error('Error fetching Q&A:', error);
+  }
+};
+
 
 
   return (
@@ -58,7 +62,8 @@ function QandA() {
               Previous
             </Button>
           )}
-          {qAndA?.content && qAndA.content.map((qandA, index) => (
+          {qAndA?.content && qAndA?.content?.map((qandA, index) => (
+            
             <div
               key={index}
               className={`w-full h-2 rounded-full ${index < stepCount ? 'bg-sky-500' : 'bg-gray-300'}`}
