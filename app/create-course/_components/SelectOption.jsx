@@ -65,7 +65,7 @@ function SelectOption() {
                 </Select>
             </div>
              <div>
-                <label className='text-md'>📖 No of Chapters</label>
+                <label className='text-md'>📖 No of Chapters prefer 5-10</label>
                 <Input type="number" className="w-[370px] mt-2"
                 onChange={(event)=>handleInputChange('noOfChapters',event.target.value)} defaultValue={userCourseInput?.noOfChapters}
                 />

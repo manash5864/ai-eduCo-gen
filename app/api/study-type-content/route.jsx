@@ -9,13 +9,13 @@ export async function POST(req) {
   let PROMPT = "";
         if (type === "Flashcard") {
           PROMPT = `Generate flashcards on the topic: "${chapters}". 
-          Provide a maximum of 10 flashcards in JSON format, each with "front" and "back" fields.`;
+          Provide a maximum of 10 flashcards in JSON format, each with "front" and "back" fields. give in the format of 'front'and 'back`;
         } else if (type === "Quiz") {
           PROMPT = `Generate a quiz on the topic: "${chapters}". 
           Provide questions in JSON format with each having "question", "options" (array of 4), and "answer".`;
         } else if (type === "Question/Answer") {
           PROMPT = `Generate Q&A pairs on the topic: "${chapters}". 
-          Provide JSON format with each chapter having one "question" and "answer" fields. give in the format of 'quetion','answer' under 'Chapter`;
+          Provide JSON format with each chapter having one "question" and "answer" fields. give in the format of 'quetion','answer' under 'Chapter'`;
         }
     
 
@@ -50,4 +50,4 @@ export async function POST(req) {
   }
 }
 
-export const runtime = 'nodejs';
+

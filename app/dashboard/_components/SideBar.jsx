@@ -130,7 +130,7 @@ function SideBar() {
   const path = usePathname();
 
   return (
-    <div className="fixed h-full w-64 p-6 bg-gradient-to-b from-purple-400 via-blue-200 to-indigo-300 text-gray-700 shadow-lg border border-gray-300 overflow-hidden">
+    <div className="fixed h-full w-64 p-6 bg-gradient-to-b from-blue-500 via-purple-200 to-orange-100 text-gray-700 shadow-lg border border-gray-300 overflow-hidden">
       <div className="flex items-center justify-center mb-6">
         <Image src={'/logo1.jpg'} width={50} height={50} alt="no" className="rounded-full border-4 border-white shadow-lg" />
       </div>
@@ -140,8 +140,8 @@ function SideBar() {
         {Menu.map((item, index) => (
           <Link href={item.path} key={index}>
             <div
-              className={`flex mt-2 items-center gap-4 p-3 cursor-pointer rounded-lg hover:bg-white/80 hover:bg-opacity-20 transition duration-300 ease-in-out transform hover:scale-105 ${
-                item.path == path && 'bg-white/80 bg-opacity-30'
+              className={`flex mt-2 items-center gap-4 p-3 cursor-pointer rounded-lg hover:bg-white/90 hover:bg-opacity-20 transition duration-300 ease-in-out transform hover:scale-105 ${
+                item.path == path && 'bg-white/90 bg-opacity-30'
               }`}
             >
               <div className="text-2xl">{item.icon}</div>

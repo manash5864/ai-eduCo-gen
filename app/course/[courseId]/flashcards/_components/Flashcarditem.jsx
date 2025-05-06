@@ -10,7 +10,7 @@ function Flashcarditem({isFlipped,handleClick,flashcard}) {
         h-[250px] 
         w-[200px] 
         md:h-[350px] md:w-[300px]" onClick={handleClick}>
-          <h2 className='text-center font-bold text-3xl' >{flashcard?.Front}</h2>
+          <h2 className='text-center font-bold text-3xl' >{flashcard?.front}</h2>
         </div>
 
         <div className="p-2 bg-sky-200 text-black flex items-center 
@@ -19,7 +19,7 @@ function Flashcarditem({isFlipped,handleClick,flashcard}) {
         w-[200px] 
         md:h-[350px] md:w-[300px]" onClick={handleClick}>
           <h2 className=' flex items-center 
-        justify text-2xl px-3'>{flashcard?.Back}</h2>
+        justify text-2xl px-3'>{flashcard?.back}</h2>
         </div>
       </ReactCardFlip>
       </div>

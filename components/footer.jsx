@@ -12,10 +12,10 @@ export default function Footer() {
         {/* Logo & Description */}
         <div className="ml-10">
           <h2 className="text-2xl font-bold text-sky-600 mb-2">AI Edu Gen</h2>
-          <p className="text-gray-500 mb-4">
+          <p className="text-gray-800 mb-4">
             Empowering learners with AI-powered courses. Learn faster, smarter, and better.
           </p>
-          <div className="flex gap-4 text-lg text-gray-500">
+          <div className="flex gap-4 text-lg text-gray-800">
             <Link href="https://twitter.com" target="_blank"><FaTwitter className="hover:text-sky-500" /></Link>
             <Link href="https://linkedin.com" target="_blank"><FaLinkedin className="hover:text-sky-500" /></Link>
             <Link href="https://github.com" target="_blank"><FaGithub className="hover:text-sky-500" /></Link>
