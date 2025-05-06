@@ -12,12 +12,10 @@ const guide = {
 const mainDevelopers = [
   {
     name: "Manash Jyoti Bora",
-    phone: "8134856496",
     image: "/Manash.jpg",
   },
   {
     name: "Rishab Ranjan Goswami",
-    phone: "8473888604",
     image: "/rishab.jpg",
   }
   
@@ -26,17 +24,14 @@ const mainDevelopers = [
 const coreMembers = [
   {
     name: "Rajdeep Karmakar",
-    phone: "8135814933",
     image: "/raj.jpg",
   },
   {
     name: "Dipannita Borah",
-    phone: "9395053400",
     image: "/Dipu2.jpg",
   },
   {
     name: "Anuj Adhikari",
-    phone: "6000649624",
     image: "/anuj.jpg",
   },
 ];
